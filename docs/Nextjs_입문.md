@@ -143,7 +143,8 @@
 - `Next.js`에서 hybrid를 가능하게 하게 제공하는 기능이다.
 
 **Next.js의 hydration 을 이용한 pre-rendering 방식과 순수 React의 hydration을 이용한 렌더링 방식을 비교해서 보면 좋을 것 같다.**
-<img src="./img/Screenshot 2023-10-06 at 12.25.59 AM.png">
+
+<img width='400' src="./img/Screenshot 2023-10-06 at 12.25.59 AM.png">
 
 - 성능 좋은 웹 앱을 만들기 위해 두 개 이상(CSR, SSG, ISR,SSR)의 랜더링 방식을 결합 시켜 사용할 수 있게 해준다.
 
