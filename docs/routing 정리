@@ -1,0 +1,26 @@
+- Prefetching
+  
+기본적으로 \<Link\>가 viewport에 보일 때
+
+useRouter의 `router.prefetch()`로 명시적 지정도 가능
+
+방식에는 해당되는 전체 경로를 하는 것과 첫 번째 로딩이 나올 때까지의 레이아웃만 하는 Dynamic Routes가 있다.
+
+- Cache
+
+클라이언트 측 메모리에 캐시
+
+- Partial Rendering
+  
+route 될 때 공유되는 레이아웃은 유지
+
+- Soft Navigation
+
+리액트나 브라우저의 state를 routing 간에도 유지가능
+
+- Route Group
+
+app 폴더 안에서 괄호로 감싼 폴더로 만들면 URL path 에 영향을 주지 않고 그룹지을 수 있다.
+
+레이아웃을 다르게 적용한다든지로 활용 가능
+
