@@ -1,7 +1,3 @@
-export default function NotFoundProduct() {
-  return (
-    <div>
-      <h2>해당 제품을 찾을 수 없습니다!</h2>
-    </div>
-  )
+export default function NotFoundPage() {
+  return <h1>페이지를 찾을 수 없음 😝</h1>
 }
