@@ -9,9 +9,9 @@ export default async function ProductsPage() {
     <>
       <h1>제품 소개 페이지</h1>
       <ul>
-        {products.map((product, i) => (
+        {products.map(({ id, name }, i) => (
           <li key={i}>
-            <Link href={`/products/${product.id}`}>{product.name}</Link>
+            <Link href={`/products/${id}`}>{name}</Link>
           </li>
         ))}
       </ul>

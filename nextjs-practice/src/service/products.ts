@@ -15,6 +15,7 @@ export async function getProducts(): Promise<Product[]> {
 }
 
 // 해당 제품에 대한 정보를 return 해 주고 싶다.
-export function getProduct(id: string) {
-  return 'shirt'
+export async function getProduct(id: string): Promise<Product | undefined> {
+  const products = await getProducts()
+  return products.find((item) => item.id === id)
 }
