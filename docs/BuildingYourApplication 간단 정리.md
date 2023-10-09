@@ -1,3 +1,5 @@
+# Routing
+
 - Prefetching
   
 기본적으로 \<Link\>가 viewport에 보일 때
@@ -61,5 +63,29 @@ SSR 과정
 
 조건에 따른 분기 페이지로 활용도 가능
 
+- Route Handler
+
+app 폴더안에 한 폴더에 하나씩만 있을 수 있다
+
+페이지로 나타나는 요소는 아님
+
+
+# Data Fetching
+
+- Fetch
+
+fetch API를 extends
+
+caching, revalidating, memoizing
+
+fetch의 반환 데이터를 캐시
+
+revalidate는 시간 / path나 tag 기준
+
+데이터 패칭은 서버에서 하는걸 권장
+
+`server-only` 패키지를 사용하는걸 추천한다고 함
+
+# Rendering
 
 
