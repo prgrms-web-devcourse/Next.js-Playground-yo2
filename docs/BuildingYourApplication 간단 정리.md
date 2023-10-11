@@ -156,3 +156,34 @@ Context Provider 같은거도 감싸서 사용
 
 클라 컴포에서 서버 컴포를 import 할 순 없다. 대신 prop으로 넘기는 건 가능
 
+# Caching
+
+Data cache 랑 request memo 의 차이는 생애주기, data는 배포 간 / req는 한 렌더링 내
+
+time-based revalidation 에서 시간이 지낫어도 캐시된 데이터를 전해주고 뒤에서 최신화
+
+on-demand 에서 데이터 set 하는 타이밍은 revalidation 시점이 아닌 다음 요청 시점
+
+RSC payload 랑 HTML도 서버에서 캐시
+
+클라에서는 Router cache - route segment 별로 나눠져 메모리에 저장, 페이지 이동(subsequent navigation, prefetching) 시 사용
+
+dynamic route는 클라 캐시는 되지만 서버에선 안됨
+
+router cache 에선 부분적 hit도 가능, 레이아웃과 페이지로 나뉜 경우 등
+
+router cache는 클라에서 유저 세션 별 저장, full route cache는 서버에서 영구적 저장해서 유저 간에도 활용 가능
+
+full route cache는 렌더링 결과를 캐시하는 것이므로 data cache에 의존적
+
+클라 router cache는 data cache에 의존적이지 않음
+
+# Images
+
+next 가 알아서 최적화
+
+LCP 위해선 젤 큰거에 priority 속성 지정
+
+사이즈 모르는 이미지일때 fill 속성 추천, 단 부모요소에 relative랑 block 지정할 것
+
+
