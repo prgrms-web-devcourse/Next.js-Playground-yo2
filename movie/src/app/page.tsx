@@ -15,7 +15,7 @@ const Home = async () => {
                 className='max-w-full rounded-xl shadow'
                 src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
               />
-              <h4>{movie.original_title}</h4>
+              <h4>{movie.original_title} test</h4>
             </div>
           </Link>
         ))}
